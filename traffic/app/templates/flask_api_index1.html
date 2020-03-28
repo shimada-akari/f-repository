@@ -1,0 +1,49 @@
+<title>TRAFFIC SIGN</title>
+
+{% extends "layout.html" %}
+{% block content %}
+
+<body style="background-color: #e4f9f5;">
+    <nav class="navbar navbar-light" style="background-color: #30e3ca;">
+        <div class="container">
+            <a style="font-size: 4vh;">Understanding the sign gives you safe drive.</a>
+        </div>
+        <div class="container">
+            <a  style="font-size: 4vh;">理解标志可以使您安全开车。</a>
+        </div>
+        <div class="container">
+            <a  style="font-size: 4vh;">표지판을 이해하면 안전하게 운전할 수 있습니다.</a>
+        </div>
+    </nav>
+</body>
+
+
+
+<form id="uploadForm" action="/result" method="post" enctype="multipart/form-data">
+    Upload the traffic sign.<br>
+    上载交通标志。<br>
+    교통 표지를 업로드하십시오.<br>
+    <div class="input-group">
+        <label class="btn-btn-primary">
+
+            <input type="file" name="image" accept="image/png, image/jpeg, image/jpg">
+
+            <button type="submit">submit,  上载,  업로드</button>
+
+            <img id="img1" style="width:30%;" /><br>
+            
+            
+        </label>
+        
+    </div>
+  
+    
+  
+  
+</form>
+
+
+
+
+
+{% endblock %}
